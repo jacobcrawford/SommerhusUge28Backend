@@ -6,6 +6,10 @@ public class Student implements Human {
     private Gender gender;
     private ArrayList<Human> friends;
 
+    private Boolean alive;
+
+    private int age;
+
     @Override
     public String getAddress() {
         return this.address;
@@ -20,5 +24,11 @@ public class Student implements Human {
     public ArrayList<Human> getFriends() {
         return this.friends;
     }
-    
+
+    @Override
+    public boolean isAlive() { return this.alive; }
+
+    @Override
+    public int getAge() { return this.age; }
+
 }
